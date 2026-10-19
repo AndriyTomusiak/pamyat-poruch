@@ -44,8 +44,7 @@ export type Review = {
 export const site = {
   // ЧЕРНЕТКА: назва бренду перед запуском.
   brand: "Пам’ять поруч",
-  // ЧЕРНЕТКА: замінити на бойовий абсолютний URL.
-  siteUrl: "https://pamyat-poruch.example",
+  siteUrl: "https://pamyat-poruch-production.up.railway.app",
   city: "Хмельницький",
   areaLabel: "Хмельницький і громада",
   areaServed: "Хмельницький",
