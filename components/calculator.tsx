@@ -68,6 +68,7 @@ export function Calculator() {
                 >
                   <span className="flex items-center gap-3">
                     <input
+                      className="theme-radio"
                       type="radio"
                       name="calculator-package"
                       value={item.id}

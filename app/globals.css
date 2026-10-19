@@ -39,6 +39,33 @@
   }
 }
 
+input.theme-radio {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin: 0;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 999px;
+  background: var(--color-card);
+  display: grid;
+  place-content: center;
+}
+
+input.theme-radio::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-gold);
+  transform: scale(0);
+  transition: transform 160ms ease;
+}
+
+input.theme-radio:checked::before {
+  transform: scale(1);
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;

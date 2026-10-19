@@ -1,3 +1,4 @@
+import { FaqList } from "@/components/faq-list";
 import { Photo } from "@/components/photo";
 import { Reveal } from "@/components/reveal";
 import { Section } from "@/components/section";
@@ -194,22 +195,7 @@ export function Faq() {
   return (
     <Section id="faq" title="Питання і відповіді">
       <Reveal>
-        <div className="max-w-3xl divide-y divide-line border-y border-line">
-          {faq.map((item) => (
-            <details key={item.question} className="group py-4">
-              <summary className="flex items-start justify-between gap-4">
-                <h3 className="text-lg font-medium text-foreground">{item.question}</h3>
-                <span aria-hidden="true" className="text-gold group-open:hidden">
-                  +
-                </span>
-                <span aria-hidden="true" className="hidden text-gold group-open:inline">
-                  −
-                </span>
-              </summary>
-              <p className="mt-3 max-w-2xl leading-relaxed text-muted">{item.answer}</p>
-            </details>
-          ))}
-        </div>
+        <FaqList items={faq} />
       </Reveal>
     </Section>
   );
